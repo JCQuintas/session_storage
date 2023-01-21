@@ -24,7 +24,7 @@ class SessionStorage implements Map<String, String> {
       _instance.addEntries(newEntries);
 
   @override
-  Map<RK, RV> cast<RK, RV>() => _instance.cast();
+  Map<RK, RV> cast<RK, RV>() => _instance.cast<RK, RV>();
 
   @override
   void clear() => _instance.clear();
@@ -59,7 +59,7 @@ class SessionStorage implements Map<String, String> {
   Map<K2, V2> map<K2, V2>(
     MapEntry<K2, V2> Function(String key, String value) convert,
   ) =>
-      _instance.map(convert);
+      _instance.map<K2, V2>(convert);
 
   @override
   String putIfAbsent(String key, String Function() ifAbsent) =>
