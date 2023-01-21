@@ -1,0 +1,14 @@
+name: session_storage
+description: Allows manipulation of SessionStorage on Web platform while using an in-memory map for other platforms.
+version: 0.0.1
+homepage: https://github.com/JCQuintas/session_storage
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  dart_code_metrics: ^5.4.0
