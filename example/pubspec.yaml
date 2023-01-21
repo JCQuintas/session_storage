@@ -1,0 +1,15 @@
+name: example
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  session_storage:
+    # When depending on this package from a real application you should use:
+    #   session_storage: ^x.y.z
+    path: ../
